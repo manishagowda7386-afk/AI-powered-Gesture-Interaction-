@@ -1,95 +1,58 @@
-export default function LandingPage() {
+const LandingPage = () => {
   return (
     <main
       style={{
         minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        background:
-          "linear-gradient(135deg,#0b1020 0%,#111827 45%,#1e293b 100%)",
+        background: "#050816",
         color: "white",
-        padding: "40px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        padding: "2rem",
       }}
     >
-      <div
+      <h1
         style={{
-          maxWidth: "900px",
-          textAlign: "center",
+          fontSize: "4rem",
+          marginBottom: "1rem",
+          fontWeight: "800",
         }}
       >
-        <p
-          style={{
-            color: "#7dd3fc",
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            fontWeight: 700,
-          }}
-        >
-          AI Powered Computer Vision
-        </p>
+        AI Powered Gesture Interaction
+      </h1>
 
-        <h1
-          style={{
-            fontSize: "64px",
-            margin: "20px 0",
-            fontWeight: 800,
-            lineHeight: 1.1,
-          }}
-        >
-          Control Your Computer
-          <br />
-          With Hand Gestures
-        </h1>
+      <p
+        style={{
+          fontSize: "1.3rem",
+          maxWidth: "700px",
+          color: "#B6C2E1",
+          lineHeight: "1.8",
+        }}
+      >
+        Control your computer using hand gestures. Draw in air, automate
+        workflows, launch applications, and interact with AI using only your
+        hands.
+      </p>
 
-        <p
-          style={{
-            color: "#cbd5e1",
-            fontSize: "20px",
-            lineHeight: 1.8,
-          }}
-        >
-          A futuristic AI platform that recognizes your hand gestures in
-          real-time and transforms them into powerful desktop actions.
-        </p>
-
-        <div
-          style={{
-            marginTop: "40px",
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-          }}
-        >
-          <button
-            style={{
-              padding: "15px 35px",
-              borderRadius: "12px",
-              border: "none",
-              background: "#2563eb",
-              color: "white",
-              fontWeight: 700,
-              cursor: "pointer",
-            }}
-          >
-            Launch Demo
-          </button>
-
-          <button
-            style={{
-              padding: "15px 35px",
-              borderRadius: "12px",
-              background: "transparent",
-              border: "2px solid #38bdf8",
-              color: "#38bdf8",
-              fontWeight: 700,
-              cursor: "pointer",
-            }}
-          >
-            Learn More
-          </button>
-        </div>
-      </div>
+      <button
+        style={{
+          marginTop: "2rem",
+          padding: "14px 32px",
+          fontSize: "1rem",
+          borderRadius: "12px",
+          border: "none",
+          cursor: "pointer",
+          background: "#6C63FF",
+          color: "white",
+          fontWeight: "600",
+        }}
+      >
+        Get Started
+      </button>
     </main>
   );
-}
+};
+
+export default LandingPage;
